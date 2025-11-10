@@ -9,9 +9,17 @@ interface ExperienceDetailProps {
   experience: Experience;
 }
 
+// Utilidad para traducir los meses y 'Present' en el período de experiencia
+function translatePeriod(period: string, t: any): string {
+  return period.replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December|Present)\b/g, (match) => t.experience.months[match] || match);
+}
+
 export function ExperienceDetail({ experience }: ExperienceDetailProps) {
   const { locale } = useLocale();
   const t = getTranslations(locale);
+
+  // Helper para forzar el tipado correcto de las claves de experiencia
+  const expKey = experience.id as keyof typeof t.experience.exp;
 
   return (
     <motion.div
@@ -22,22 +30,22 @@ export function ExperienceDetail({ experience }: ExperienceDetailProps) {
     >
       <div className="mb-6">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-          {experience.position}
+          {t.experience.exp[expKey].position}
         </h1>
         <h2 className="text-2xl text-gray-600 dark:text-gray-400 mb-2">
-          {experience.company}
+          {t.experience.exp[expKey].company}
         </h2>
         <p className="text-lg text-gray-500 dark:text-gray-500">
-          {experience.period}
+          {translatePeriod(experience.period, t)}
         </p>
       </div>
 
       <div className="mb-8">
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-          Description
+          {t.experience.description}
         </h3>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-          {experience.description}
+          {t.experience.exp[expKey].description}
         </p>
       </div>
 
@@ -46,7 +54,7 @@ export function ExperienceDetail({ experience }: ExperienceDetailProps) {
           {t.experience.achievements}
         </h3>
         <ul className="space-y-3">
-          {experience.achievements.map((achievement, index) => (
+          {t.experience.exp[expKey].achievements.map((achievement, index) => (
             <motion.li
               key={index}
               initial={{ opacity: 0, x: -20 }}

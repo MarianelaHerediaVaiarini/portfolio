@@ -16,7 +16,7 @@ export function ThemeToggle() {
     // Return placeholder to avoid hydration mismatch
     return (
       <button
-        className="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        className="relative p-2 rounded-full hover:bg-card transition-colors"
         aria-label="Toggle theme"
       >
         <div className="w-5 h-5" />
@@ -27,7 +27,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+      className="relative p-2 rounded-full hover:bg-card transition-colors text-foreground"
       aria-label="Toggle theme"
     >
       <motion.div
@@ -43,7 +43,7 @@ export function ThemeToggle() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-5 h-5"
+            className="w-5 h-5 text-muted"
           >
             <path
               strokeLinecap="round"
@@ -58,7 +58,7 @@ export function ThemeToggle() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-5 h-5"
+            className="w-5 h-5 text-muted"
           >
             <path
               strokeLinecap="round"
@@ -71,4 +71,3 @@ export function ThemeToggle() {
     </button>
   );
 }
-

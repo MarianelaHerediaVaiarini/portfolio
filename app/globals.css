@@ -5,8 +5,49 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Colores Light Mode */
+  --color-background: #FAFAFB;
+  --color-foreground: #18181B;
+  --color-muted: #6B6B76;
+  --color-card-background: #F4F2FA;
+  --color-primary: #8B5CF6;
+  --color-secondary: #C4B5FD;
+  --color-accent: #DDD6FE;
+  --color-border: #E4E4E7;
+  
+  /* Espaciado y radios */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
 }
 
+/* Base styles */
 body {
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode palette overrides */
+.dark {
+  --color-background: #0F0F14;
+  --color-foreground: #F5F5F7;
+  --color-muted: #A1A1AA;
+  --color-card-background: #1A1A22;
+  --color-primary: #A78BFA;
+  --color-secondary: #7C3AED;
+  --color-accent: #6366F1;
+  --color-border: #27272A;
+}
+
+/* Utility classes personalizadas */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }

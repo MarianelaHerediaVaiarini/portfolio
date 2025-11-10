@@ -17,11 +17,14 @@ export function AboutSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="md:text-4xl text-2xl font-semibold mb-6">
             {t.about.title}
           </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="md:text-lg text-md  leading-relaxed">
             {t.about.description}
+          </p>
+          <p className="md:text-lg text-md leading-relaxed mt-2">
+            {t.about.description2}
           </p>
         </motion.div>
       </div>

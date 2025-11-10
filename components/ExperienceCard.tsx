@@ -11,9 +11,15 @@ interface ExperienceCardProps {
   index: number;
 }
 
+function translatePeriod(period: string, t: any): string {
+  return period.replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December|Present)\b/g, (match) => t.experience.months[match] || match);
+}
+
 export function ExperienceCard({ experience, index }: ExperienceCardProps) {
   const { locale } = useLocale();
   const t = getTranslations(locale);
+
+  const expKey = experience.id as keyof typeof t.experience.exp;
 
   return (
     <motion.div
@@ -27,16 +33,16 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div className="flex-1">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                {experience.position}
+                {t.experience.exp[expKey].position}
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-2">
-                {experience.company}
+                {t.experience.exp[expKey].company}
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-500 mb-4">
-                {experience.period}
+                {translatePeriod(experience.period, t)}
               </p>
               <p className="text-gray-700 dark:text-gray-300 line-clamp-2">
-                {experience.description}
+                {t.experience.exp[expKey].description}
               </p>
             </div>
           </div>
