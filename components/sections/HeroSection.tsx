@@ -16,13 +16,13 @@ export function HeroSection() {
   });
 
   return (
-    <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 lg:px-16 gap-12 pt-20">
+    <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 gap-12 pt-20">
       <div className="flex-1 text-left space-y-4">
         <motion.h1
           {...fadeUp(0.1)}
           className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white"
         >
-          {t.hero.title}
+          {t.hero.name} <br/>{t.hero.surname}
         </motion.h1>
 
         <motion.h3
@@ -39,17 +39,6 @@ export function HeroSection() {
           {t.hero.description}
         </motion.p>
 
-        <motion.div
-          {...fadeUp(0.8)}
-          className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-md"
-        >
-          <a
-            href="#projects"
-            className="inline-block px-8 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
-          >
-            {t.hero.cta}
-          </a>
-        </motion.div>
       </div>
 
       <motion.div
