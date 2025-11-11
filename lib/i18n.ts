@@ -26,9 +26,9 @@ export const translations = {
     experience: {
       title: "Experience",
       period: "Period",
-      achievements: "Key Achievements",
-      technologies: "Technologies Used",
-      viewDetails: "View Details",
+      achievements: "Key achievements",
+      technologies: "Technologies used",
+      viewDetails: "View details",
       back: "Back to experience",
       description: "Description",
       months: {
@@ -44,7 +44,7 @@ export const translations = {
         October: "October",
         November: "November",
         December: "December",
-        Present: "Present"
+        Present: "Present",
       },
       exp: {
         "exp-1": {
@@ -71,7 +71,7 @@ export const translations = {
           ],
         },
         "exp-3": {
-          company: "Startup XYZ",
+          company: "Startup Promptear",
           position: "Full-Stack Developer",
           description:
             "Development of scalable web applications and seamless integration between frontend and backend within an AI-focused ecosystem. Actively involved in technical, functional, and design decisions, applying best development practices and ensuring high-quality, efficient solutions.",
@@ -87,6 +87,7 @@ export const translations = {
     technologies: {
       title: "Technologies",
       categories: {
+        language: "Languages",
         frontend: "Frontend",
         backend: "Backend",
         databases: "Databases",
@@ -100,7 +101,8 @@ export const translations = {
     },
     contact: {
       title: "Get In Touch",
-      subtitle: "Let's work together on your next project",
+      subtitle:
+        "I’m excited to discover how I can contribute to your project or team",
     },
     footer: {
       rights: "All rights reserved",
@@ -131,9 +133,9 @@ export const translations = {
     experience: {
       title: "Experiencia",
       period: "Período",
-      achievements: "Logros Clave",
-      technologies: "Tecnologías Utilizadas",
-      viewDetails: "Ver Detalles",
+      achievements: "Logros claves",
+      technologies: "Tecnologías utilizadas",
+      viewDetails: "Ver detalles",
       back: "Volver a experiencia",
       description: "Descripción",
       months: {
@@ -149,7 +151,7 @@ export const translations = {
         October: "Octubre",
         November: "Noviembre",
         December: "Diciembre",
-        Present: "Actualidad"
+        Present: "Actualidad",
       },
       exp: {
         "exp-1": {
@@ -176,7 +178,7 @@ export const translations = {
           ],
         },
         "exp-3": {
-          company: "Startup XYZ",
+          company: "Startup Promptear",
           position: "Desarrolladora Full-Stack",
           description:
             "Desarrollo de aplicaciones web escalables e integración fluida entre frontend y backend en un ecosistema enfocado en IA. Participación activa en decisiones técnicas, funcionales y de diseño, aplicando buenas prácticas y asegurando soluciones eficientes y de calidad.",
@@ -192,6 +194,7 @@ export const translations = {
     technologies: {
       title: "Tecnologías",
       categories: {
+        language: "Lenguajes",
         frontend: "Frontend",
         backend: "Backend",
         databases: "Bases de Datos",
@@ -204,8 +207,9 @@ export const translations = {
       },
     },
     contact: {
-      title: "Ponte En Contacto",
-      subtitle: "Trabajemos juntos en tu próximo proyecto",
+      title: "Ponte en contacto",
+      subtitle:
+        "Me emociona descubrir cómo puedo aportar valor a tu proyecto o a tu equipo",
     },
     footer: {
       rights: "Todos los derechos reservados",

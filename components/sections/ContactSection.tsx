@@ -22,8 +22,8 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-200">
+      <div className="max-w-5xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export function ContactSection() {
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wide">
                   {contact.type}
                 </div>
-                <div className="text-gray-900 dark:text-white font-medium">
+                <div className="text-gray-900 dark:text-white font-normal">
                   {contact.value}
                 </div>
               </motion.a>
@@ -65,4 +65,3 @@ export function ContactSection() {
     </section>
   );
 }
-

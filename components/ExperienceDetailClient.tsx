@@ -12,7 +12,7 @@ export function ExperienceDetailClient({ experience }: { experience: any }) {
     <>
       <Link
         href="/#experience"
-        className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 mb-8 transition-colors"
+        className="inline-flex items-center text-primary  hover:text-secondary mb-8 transition-colors"
       >
         <svg
           className="w-5 h-5 mr-2"

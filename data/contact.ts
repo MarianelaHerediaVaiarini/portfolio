@@ -8,23 +8,23 @@ export interface Contact {
 export const contacts: Contact[] = [
   {
     type: "email",
-    value: "your-email@example.com",
-    url: "mailto:your-email@example.com",
+    value: "marianelaherediavaiarini@gmail.com",
+    url: "mailto:marianelaherediavaiarini@gmail.com",
   },
   {
     type: "linkedin",
-    value: "linkedin.com/in/your-profile",
-    url: "https://linkedin.com/in/your-profile",
+    value: "linkedin.com/in/marianela-heredia-vaiarini-3244a3334",
+    url: "https://www.linkedin.com/in/marianela-heredia-vaiarini-3244a3334/"
   },
   {
     type: "github",
-    value: "github.com/your-username",
-    url: "https://github.com/your-username",
+    value: "github.com/MarianelaHerediaVaiarini",
+    url: "https://github.com/MarianelaHerediaVaiarini",
   },
   {
     type: "phone",
-    value: "+1 234 567 8900",
-    url: "tel:+12345678900",
+    value: "+34 602 437 385",
+    url: "tel:+34602437385",
   },
   {
     type: "portfolio",

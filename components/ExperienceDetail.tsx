@@ -9,7 +9,6 @@ interface ExperienceDetailProps {
   experience: Experience;
 }
 
-// Utilidad para traducir los meses y 'Present' en el período de experiencia
 function translatePeriod(period: string, t: any): string {
   return period.replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December|Present)\b/g, (match) => t.experience.months[match] || match);
 }
@@ -18,7 +17,6 @@ export function ExperienceDetail({ experience }: ExperienceDetailProps) {
   const { locale } = useLocale();
   const t = getTranslations(locale);
 
-  // Helper para forzar el tipado correcto de las claves de experiencia
   const expKey = experience.id as keyof typeof t.experience.exp;
 
   return (
@@ -62,7 +60,7 @@ export function ExperienceDetail({ experience }: ExperienceDetailProps) {
               transition={{ duration: 0.3, delay: index * 0.1 }}
               className="flex items-start"
             >
-              <span className="text-blue-600 dark:text-blue-400 mr-3 mt-1">✓</span>
+              <span className="text-primary  mr-3 mt-1">✓</span>
               <span className="text-gray-700 dark:text-gray-300">{achievement}</span>
             </motion.li>
           ))}

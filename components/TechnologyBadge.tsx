@@ -10,8 +10,9 @@ interface TechnologyBadgeProps {
 
 export function TechnologyBadge({ technology, index }: TechnologyBadgeProps) {
   const levelColors = {
-    advanced: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
-    intermediate: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
+    advanced: "bg-secondary text-primary",
+    intermediate:
+      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
     basic: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
   };
 
@@ -22,10 +23,11 @@ export function TechnologyBadge({ technology, index }: TechnologyBadgeProps) {
       viewport={{ once: true }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
       whileHover={{ scale: 1.05 }}
-      className={`px-4 py-2 rounded-lg text-sm font-medium transition-transform ${levelColors[technology.level]}`}
+      className={`px-4 py-2 rounded-lg text-sm font-medium transition-transform ${
+        levelColors[technology.level]
+      }`}
     >
       {technology.name}
     </motion.div>
   );
 }
-

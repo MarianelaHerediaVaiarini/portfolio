@@ -36,7 +36,7 @@ export function TechnologiesSection() {
           </h2>
         </motion.div>
         <div className="space-y-12">
-          {(["frontend", "backend", "databases", "tools"] as const).map(
+          {(['language', "frontend", "backend", "databases", "tools"] as const).map(
             (category, categoryIndex) => {
               const categoryTechs = groupedTechnologies[category] || [];
               if (categoryTechs.length === 0) return null;

@@ -12,7 +12,10 @@ interface ExperienceCardProps {
 }
 
 function translatePeriod(period: string, t: any): string {
-  return period.replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December|Present)\b/g, (match) => t.experience.months[match] || match);
+  return period.replace(
+    /\b(January|February|March|April|May|June|July|August|September|October|November|December|Present)\b/g,
+    (match) => t.experience.months[match] || match
+  );
 }
 
 export function ExperienceCard({ experience, index }: ExperienceCardProps) {
@@ -32,7 +35,7 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
         <div className="group relative p-6 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:shadow-lg">
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div className="flex-1">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-secondary transition-colors">
                 {t.experience.exp[expKey].position}
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-2">
@@ -61,7 +64,7 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
               </span>
             )}
           </div>
-          <div className="mt-4 text-sm text-blue-600 dark:text-blue-400 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="mt-4 text-sm text-primary dark:text-secondary  font-medium opacity-0 group-hover:opacity-100 transition-opacity">
             {t.experience.viewDetails} →
           </div>
         </div>
@@ -69,4 +72,3 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
     </motion.div>
   );
 }
-
