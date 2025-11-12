@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { Experience } from "@/data/experience";
+import type { IExperienceDetail } from "@/app/interfaces/ExperienceDetail.interface";
 import { getTranslations } from "@/lib/i18n";
 import { useLocale } from "@/contexts/LocaleContext";
 
 interface ExperienceDetailProps {
-  experience: Experience;
+  experience: IExperienceDetail;
 }
 
 function translatePeriod(period: string, t: any): string {

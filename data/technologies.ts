@@ -1,10 +1,12 @@
+import { ITechnology } from "@/app/interfaces/Technology.interface";
+
 export interface Technology {
   name: string;
   category: "frontend" | "backend" | "tools" | "databases" | "language";
   level: "advanced" | "intermediate" | "basic";
 }
 
-export const technologies: Technology[] = [
+export const technologies: ITechnology[] = [
   //Languages
   { name: "TypeScript", category: "language", level: "advanced" },
   { name: "JavaScript", category: "language", level: "advanced" },

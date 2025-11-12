@@ -1,3 +1,5 @@
+import { IContact } from "@/app/interfaces/Contact.interface";
+
 export interface Contact {
   type: "email" | "linkedin" | "github" | "phone" | "twitter" | "portfolio";
   value: string;
@@ -5,7 +7,7 @@ export interface Contact {
   url?: string;
 }
 
-export const contacts: Contact[] = [
+export const contacts: IContact[] = [
   {
     type: "email",
     value: "marianelaherediavaiarini@gmail.com",
@@ -14,7 +16,7 @@ export const contacts: Contact[] = [
   {
     type: "linkedin",
     value: "linkedin.com/in/marianela-heredia-vaiarini-3244a3334",
-    url: "https://www.linkedin.com/in/marianela-heredia-vaiarini-3244a3334/"
+    url: "https://www.linkedin.com/in/marianela-heredia-vaiarini-3244a3334/",
   },
   {
     type: "github",
@@ -32,4 +34,3 @@ export const contacts: Contact[] = [
     url: "https://www.your-portfolio.com",
   },
 ];
-

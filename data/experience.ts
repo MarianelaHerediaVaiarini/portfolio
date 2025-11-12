@@ -1,11 +1,6 @@
-export interface Experience {
-  id: string;
-  period: string;
-  technologies: string[];
-  image?: string;
-}
+import { IExperienceDetail } from "@/app/interfaces/ExperienceDetail.interface";
 
-export const experiences: Experience[] = [
+export const experiences: IExperienceDetail[] = [
   {
     id: "exp-1",
     period: "October 2023 - Present",

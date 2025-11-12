@@ -1,6 +1,8 @@
+import type { ITranslations } from "@/app/interfaces/Translations.interface";
+
 export type Locale = "en" | "es";
 
-export const translations = {
+export const translations: Record<Locale, ITranslations> = {
   en: {
     nav: {
       home: "Home",

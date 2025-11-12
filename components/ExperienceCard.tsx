@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import type { Experience } from "@/data/experience";
+import type { IExperienceDetail } from "@/app/interfaces/ExperienceDetail.interface";
 import { getTranslations } from "@/lib/i18n";
 import { useLocale } from "@/contexts/LocaleContext";
 
 interface ExperienceCardProps {
-  experience: Experience;
+  experience: IExperienceDetail;
   index: number;
 }
 
