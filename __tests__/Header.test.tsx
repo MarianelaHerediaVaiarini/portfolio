@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { ExperienceDetail } from "@/components/ExperienceDetail";
 import { Header } from "@/components/Header";
 import { mockTranslations } from "@/__mocks__/mockTranslations";
 
