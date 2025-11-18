@@ -30,7 +30,7 @@ export const contacts: IContact[] = [
   },
   {
     type: "portfolio",
-    value: "www.your-portfolio.com",
-    url: "https://www.your-portfolio.com",
+    value: "www.marianelaherediadev.es",
+    url: "https://www.marianelaherediadev.es/",
   },
 ];

@@ -22,7 +22,8 @@ const cormorant = Cormorant({
 
 export const metadata: Metadata = {
   title: "Marianela Heredia Vaiarini | Full Stack Developer",
-  description: "I'm passionate about creating clean, intuitive, and purposeful digital experiences. I combine design and development to build modern, accessible, and user-centered products.",
+  description:
+    "I'm passionate about creating clean, intuitive, and purposeful digital experiences. I combine design and development to build modern, accessible, and user-centered products.",
 };
 
 export default function RootLayout({
@@ -58,9 +59,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} antialiased bg-background text-foreground transition-colors`}
       >
         <ThemeProvider>
-          <LocaleProvider>
-            {children}
-          </LocaleProvider>
+          <LocaleProvider>{children}</LocaleProvider>
         </ThemeProvider>
       </body>
     </html>
