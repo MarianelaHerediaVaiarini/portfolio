@@ -74,9 +74,9 @@ export const translations: Record<Locale, ITranslations> = {
           description:
             "Development and implementation of modern, dynamic interfaces for a human resources management platform. Focused on enhancing usability, data visualization, and overall user experience within an agile environment.",
           achievements: [
-            "Developed new features aimed at improving system usability and efficiency.s",
-            "Designed and implemented interactive charts and statistics pages for data-driven decisions.",
-            "Optimized user experience through intuitive and consistent interfaces.",
+            "Development of new features aimed at improving system usability and efficiency.",
+            "Design and implementation of analytics pages with interactive charts to support data-driven decision-making.",
+            "Optimization of the user experience through intuitive, consistent, and user-centered interfaces.",
           ],
         },
         "exp-3": {
@@ -189,8 +189,8 @@ export const translations: Record<Locale, ITranslations> = {
             "Desarrollo e implementación de interfaces modernas y dinámicas para una plataforma de gestión de recursos humanos. Enfoque en mejorar la usabilidad, visualización de datos y experiencia de usuario en un entorno ágil.",
           achievements: [
             "Desarrollo de nuevas funcionalidades orientadas a mejorar la usabilidad y eficiencia del sistema.",
-            "Diseño e implementación de páginas de estadísticas y gráficos interactivos para decisiones basadas en datos.",
-            "Optimización de la experiencia de usuario mediante interfaces intuitivas y consistentes.",
+            "Diseño e implementación de páginas de estadísticas con gráficos interactivos para facilitar decisiones basadas en datos.",
+            "Optimización de la experiencia de usuario mediante la creación de interfaces intuitivas, consistentes y centradas en el usuario.",
           ],
         },
         "exp-3": {
