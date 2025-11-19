@@ -29,6 +29,7 @@ export const experiences: IExperienceDetail[] = [
       "TypeScript",
       "JavaScript",
       "VueJS",
+      "Angular",
       "Figma",
       "Tailwind CSS",
       "CSS",
